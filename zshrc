@@ -21,9 +21,11 @@ export CASE_SENSITIVE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails osx git ruby brew gem vi-mode bundler)
+plugins=(rails osx git ruby brew gem vi-mode bundler rvm developer)
 
 source $ZSH/oh-my-zsh.sh
+
+PATH="$PATH:$HOME/bin"
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
