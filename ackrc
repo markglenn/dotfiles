@@ -1,6 +1,2 @@
 --type-add=ruby=.haml,.rake
-
-# Search all files
--a
-
 --ignore-dir=log,tmp
