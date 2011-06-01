@@ -28,4 +28,7 @@ class Object
   end
 end
 
-load File.dirname(__FILE__) + '/.railsrc' if ($0 == 'irb' && ENV['RAILS_ENV']) || ($0 == 'script/rails' && Rails.env)
+if ($0 == 'irb' && ENV['RAILS_ENV']) || ($0 == 'script/rails' && Rails.env)
+  path = File.dirname(__FILE__) + '/.railsrc' 
+  load path if File.exists?( path )
+end
