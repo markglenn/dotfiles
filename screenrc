@@ -1,0 +1,19 @@
+startup_message off
+
+#bindkey "^[Od" prev  # change window with ctrl-left
+#bindkey "^[Oc" next  # change window with ctrl-right
+
+terminfo rxvt-unicode ti@:te@:
+term screen-256color
+setenv LC_CTYPE en_US.UTF-8
+defutf8 on
+setenv DISPLAY ':0'
+nonblock on
+vbell off
+msgwait 10
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+
+hardcopydir ~/.screen
