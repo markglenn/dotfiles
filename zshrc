@@ -25,7 +25,7 @@ plugins=(rails git ruby bundler brew gem vi-mode rvm c)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$PATH:$HOME/bin"
+export PATH="/usr/local/bin:$PATH"
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
@@ -33,3 +33,9 @@ if [ -f ~/.localrc ]; then
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+
+# Mac OS X specific commands
+if [[ `uname` =~ 'Darwin' ]]; then
+  alias vim='mvim -v'
+fi
