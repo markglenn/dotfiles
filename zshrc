@@ -25,7 +25,7 @@ plugins=(rails git ruby bundler brew gem vi-mode rvm code)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
