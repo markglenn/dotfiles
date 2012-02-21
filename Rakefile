@@ -9,6 +9,10 @@ task :install do
 
     home_file = File.join( ENV['HOME'], ".#{file}" )
 
+    # Special cases
+    home_file = File.join( ENV['HOME'], '.vim' ) if file == 'vimfiles'
+    home_file = File.join( ENV['HOME'], '.zsh' ) if file == 'oh-my-zsh'
+
     if File.exist?( home_file )
       if File.identical? file, home_file
         puts "Skipping identical #{home_file}"
