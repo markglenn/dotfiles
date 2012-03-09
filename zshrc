@@ -32,9 +32,6 @@ if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-
 # Mac OS X specific commands
 if [[ `uname` =~ 'Darwin' ]]; then
   alias vim='mvim -v'
