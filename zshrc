@@ -21,11 +21,11 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow heroku)
+plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow heroku zeus)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
+export PATH="/usr/local/bin:$PATH:/usr/local/sbin:$HOME/.dotfiles/bin"
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
