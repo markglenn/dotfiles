@@ -16,7 +16,7 @@ class Backup
     if into_development?
       system %{
         curl -s `#{db_backup_url}` | \
-        pg_restore --verbose --clean --no-acl --no-owner -d #{db_development}
+        pg_restore --verbose --clean --no-acl --no-owner -d #{db_development} -h localhost
       }
     elsif into_staging?
       system %{
