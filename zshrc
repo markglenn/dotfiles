@@ -37,6 +37,10 @@ if [[ `uname` =~ 'Darwin' ]]; then
   alias vim='mvim -v'
 fi
 
+if [ -f /usr/local/bin/grunt ]; then
+  eval "$(grunt --completion=zsh)"
+fi
+
 # Enable vim editing of the current line
 autoload edit-command-line
 zle -N edit-command-line
