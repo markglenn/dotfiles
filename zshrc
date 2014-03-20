@@ -47,3 +47,4 @@ zle -N edit-command-line
 bindkey '^Xe' edit-command-line
 
 unsetopt correct_all
+unsetopt auto_name_dirs
