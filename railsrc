@@ -1,5 +1,0 @@
-#!/usr/bin/ruby
-
-def route( url, options = { } )
-  ActionController::Routing::Routes.recognize_path( url, options )
-end
