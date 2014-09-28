@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow heroku zeus npm)
+plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow zeus)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -35,14 +35,6 @@ fi
 # Mac OS X specific commands
 if [[ `uname` =~ 'Darwin' ]]; then
   alias vim='mvim -v'
-fi
-
-if [ -f /usr/local/bin/grunt ]; then
-  eval "$(grunt --completion=zsh)"
-fi
-
-if [ -f /usr/local/bin/gulp ]; then
-  eval "$(gulp --completion=zsh)"
 fi
 
 # Enable vim editing of the current line
