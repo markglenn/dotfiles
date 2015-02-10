@@ -44,3 +44,6 @@ bindkey '^Xe' edit-command-line
 
 unsetopt correct_all
 unsetopt auto_name_dirs
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
