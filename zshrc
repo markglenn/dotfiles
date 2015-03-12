@@ -26,6 +26,7 @@ plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow zeus
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:$PATH:/usr/local/sbin:$HOME/.dotfiles/bin"
+export GOPATH="$HOME/go"
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
