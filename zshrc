@@ -21,7 +21,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow zeus virtualenvwrapper)
+plugins=(rails ruby bundler git brew gem code vi-mode vi-line-edit git-flow zeus)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,3 +48,10 @@ unsetopt auto_name_dirs
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+eval $(thefuck --alias)
+
+# Turn carriage returns into newlines so I can login to certain SSH servers
+stty icrnl
